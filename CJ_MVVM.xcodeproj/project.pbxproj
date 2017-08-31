@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00EE8F6B2F394E1076C9F620 /* Pods_CJ_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A1D42D5CA71B5ECA16A751 /* Pods_CJ_MVVM.framework */; };
+		F40FD9761F53C48600BA1D8F /* PublicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD9751F53C48600BA1D8F /* PublicViewModel.m */; };
+		F40FD9791F53C69E00BA1D8F /* MainListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD9781F53C69E00BA1D8F /* MainListViewModel.m */; };
+		F40FD97D1F53CBA400BA1D8F /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD97C1F53CBA400BA1D8F /* NetRequest.m */; };
+		F40FD9801F53F9CE00BA1D8F /* MainListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD97F1F53F9CE00BA1D8F /* MainListModel.m */; };
+		F40FD9831F53F9E800BA1D8F /* MainBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD9821F53F9E800BA1D8F /* MainBaseModel.m */; };
+		F40FD9861F54CBFC00BA1D8F /* MainDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD9851F54CBFC00BA1D8F /* MainDetailViewController.m */; };
+		F48133E41F4D75CB00019A2B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48133E31F4D75CB00019A2B /* AFNetworking.framework */; };
 		F4E1614C1F4D25F500A70969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E1614B1F4D25F500A70969 /* main.m */; };
 		F4E1614F1F4D25F500A70969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E1614E1F4D25F500A70969 /* AppDelegate.m */; };
 		F4E161521F4D25F500A70969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E161511F4D25F500A70969 /* ViewController.m */; };
@@ -15,6 +23,9 @@
 		F4E1615A1F4D25F500A70969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E161581F4D25F500A70969 /* LaunchScreen.storyboard */; };
 		F4E161651F4D25F500A70969 /* CJ_MVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E161641F4D25F500A70969 /* CJ_MVVMTests.m */; };
 		F4E161701F4D25F500A70969 /* CJ_MVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E1616F1F4D25F500A70969 /* CJ_MVVMUITests.m */; };
+		F4E161821F4D26C700A70969 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E161811F4D26C700A70969 /* MainViewController.m */; };
+		F4E161891F4D58B000A70969 /* MainListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E161871F4D58B000A70969 /* MainListTableViewCell.m */; };
+		F4E1618A1F4D58B000A70969 /* MainListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E161881F4D58B000A70969 /* MainListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CE6486B7620F83808A35B9F /* Pods-CJ_MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJ_MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJ_MVVM/Pods-CJ_MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		73A1D42D5CA71B5ECA16A751 /* Pods_CJ_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CJ_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BD93015CE76DA5638DDE2B /* Pods-CJ_MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJ_MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJ_MVVM/Pods-CJ_MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		F40FD9741F53C48600BA1D8F /* PublicViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicViewModel.h; sourceTree = "<group>"; };
+		F40FD9751F53C48600BA1D8F /* PublicViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicViewModel.m; sourceTree = "<group>"; };
+		F40FD9771F53C69E00BA1D8F /* MainListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainListViewModel.h; sourceTree = "<group>"; };
+		F40FD9781F53C69E00BA1D8F /* MainListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainListViewModel.m; sourceTree = "<group>"; };
+		F40FD97B1F53CBA400BA1D8F /* NetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
+		F40FD97C1F53CBA400BA1D8F /* NetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
+		F40FD97E1F53F9CE00BA1D8F /* MainListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainListModel.h; sourceTree = "<group>"; };
+		F40FD97F1F53F9CE00BA1D8F /* MainListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainListModel.m; sourceTree = "<group>"; };
+		F40FD9811F53F9E800BA1D8F /* MainBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBaseModel.h; sourceTree = "<group>"; };
+		F40FD9821F53F9E800BA1D8F /* MainBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBaseModel.m; sourceTree = "<group>"; };
+		F40FD9841F54CBFC00BA1D8F /* MainDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDetailViewController.h; sourceTree = "<group>"; };
+		F40FD9851F54CBFC00BA1D8F /* MainDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDetailViewController.m; sourceTree = "<group>"; };
+		F48133E31F4D75CB00019A2B /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		F4E161471F4D25F500A70969 /* CJ_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJ_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E1614B1F4D25F500A70969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4E1614D1F4D25F500A70969 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +78,11 @@
 		F4E1616B1F4D25F500A70969 /* CJ_MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJ_MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E1616F1F4D25F500A70969 /* CJ_MVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJ_MVVMUITests.m; sourceTree = "<group>"; };
 		F4E161711F4D25F500A70969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4E161801F4D26C700A70969 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F4E161811F4D26C700A70969 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F4E161861F4D58B000A70969 /* MainListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainListTableViewCell.h; sourceTree = "<group>"; };
+		F4E161871F4D58B000A70969 /* MainListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainListTableViewCell.m; sourceTree = "<group>"; };
+		F4E161881F4D58B000A70969 /* MainListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48133E41F4D75CB00019A2B /* AFNetworking.framework in Frameworks */,
+				00EE8F6B2F394E1076C9F620 /* Pods_CJ_MVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +112,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77C59AC30935F4C5F3AD0251 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CE6486B7620F83808A35B9F /* Pods-CJ_MVVM.debug.xcconfig */,
+				C0BD93015CE76DA5638DDE2B /* Pods-CJ_MVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E31657D3893E6BDA71F868F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F48133E31F4D75CB00019A2B /* AFNetworking.framework */,
+				73A1D42D5CA71B5ECA16A751 /* Pods_CJ_MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F40FD97A1F53CB6800BA1D8F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F40FD97B1F53CBA400BA1D8F /* NetRequest.h */,
+				F40FD97C1F53CBA400BA1D8F /* NetRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		F419080D1F4EB18500061464 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F40FD97E1F53F9CE00BA1D8F /* MainListModel.h */,
+				F40FD97F1F53F9CE00BA1D8F /* MainListModel.m */,
+				F40FD9811F53F9E800BA1D8F /* MainBaseModel.h */,
+				F40FD9821F53F9E800BA1D8F /* MainBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4E1613E1F4D25F500A70969 = {
 			isa = PBXGroup;
 			children = (
+				F40FD97A1F53CB6800BA1D8F /* Request */,
+				F419080D1F4EB18500061464 /* Model */,
+				F4E1617E1F4D266400A70969 /* View */,
+				F4E1617F1F4D266400A70969 /* ViewModel */,
+				F4E1617D1F4D264300A70969 /* Controller */,
 				F4E161491F4D25F500A70969 /* CJ_MVVM */,
 				F4E161631F4D25F500A70969 /* CJ_MVVMTests */,
 				F4E1616E1F4D25F500A70969 /* CJ_MVVMUITests */,
 				F4E161481F4D25F500A70969 /* Products */,
+				77C59AC30935F4C5F3AD0251 /* Pods */,
+				E31657D3893E6BDA71F868F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +219,38 @@
 			path = CJ_MVVMUITests;
 			sourceTree = "<group>";
 		};
+		F4E1617D1F4D264300A70969 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4E161801F4D26C700A70969 /* MainViewController.h */,
+				F4E161811F4D26C700A70969 /* MainViewController.m */,
+				F40FD9841F54CBFC00BA1D8F /* MainDetailViewController.h */,
+				F40FD9851F54CBFC00BA1D8F /* MainDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4E1617E1F4D266400A70969 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4E161861F4D58B000A70969 /* MainListTableViewCell.h */,
+				F4E161871F4D58B000A70969 /* MainListTableViewCell.m */,
+				F4E161881F4D58B000A70969 /* MainListTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4E1617F1F4D266400A70969 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F40FD9741F53C48600BA1D8F /* PublicViewModel.h */,
+				F40FD9751F53C48600BA1D8F /* PublicViewModel.m */,
+				F40FD9771F53C69E00BA1D8F /* MainListViewModel.h */,
+				F40FD9781F53C69E00BA1D8F /* MainListViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4E161741F4D25F500A70969 /* Build configuration list for PBXNativeTarget "CJ_MVVM" */;
 			buildPhases = (
+				95703A081E72D3114D3C5721 /* [CP] Check Pods Manifest.lock */,
 				F4E161431F4D25F500A70969 /* Sources */,
 				F4E161441F4D25F500A70969 /* Frameworks */,
 				F4E161451F4D25F500A70969 /* Resources */,
+				1EE8B0286744F11D3037F3CB /* [CP] Embed Pods Frameworks */,
+				8C9AC1F6F555DD6FFACD3896 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +362,7 @@
 			files = (
 				F4E1615A1F4D25F500A70969 /* LaunchScreen.storyboard in Resources */,
 				F4E161571F4D25F500A70969 /* Assets.xcassets in Resources */,
+				F4E1618A1F4D58B000A70969 /* MainListTableViewCell.xib in Resources */,
 				F4E161551F4D25F500A70969 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,14 +383,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EE8B0286744F11D3037F3CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJ_MVVM/Pods-CJ_MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C9AC1F6F555DD6FFACD3896 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJ_MVVM/Pods-CJ_MVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95703A081E72D3114D3C5721 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4E161431F4D25F500A70969 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F4E161521F4D25F500A70969 /* ViewController.m in Sources */,
+				F40FD9801F53F9CE00BA1D8F /* MainListModel.m in Sources */,
+				F40FD97D1F53CBA400BA1D8F /* NetRequest.m in Sources */,
 				F4E1614F1F4D25F500A70969 /* AppDelegate.m in Sources */,
+				F40FD9791F53C69E00BA1D8F /* MainListViewModel.m in Sources */,
 				F4E1614C1F4D25F500A70969 /* main.m in Sources */,
+				F4E161891F4D58B000A70969 /* MainListTableViewCell.m in Sources */,
+				F4E161821F4D26C700A70969 /* MainViewController.m in Sources */,
+				F40FD9761F53C48600BA1D8F /* PublicViewModel.m in Sources */,
+				F40FD9831F53F9E800BA1D8F /* MainBaseModel.m in Sources */,
+				F40FD9861F54CBFC00BA1D8F /* MainDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +595,13 @@
 		};
 		F4E161751F4D25F500A70969 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE6486B7620F83808A35B9F /* Pods-CJ_MVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+				);
 				INFOPLIST_FILE = CJ_MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Annie.CJ-MVVM";
@@ -435,8 +611,13 @@
 		};
 		F4E161761F4D25F500A70969 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BD93015CE76DA5638DDE2B /* Pods-CJ_MVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AFNetworking",
+				);
 				INFOPLIST_FILE = CJ_MVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Annie.CJ-MVVM";
@@ -509,6 +690,7 @@
 				F4E161761F4D25F500A70969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4E161771F4D25F500A70969 /* Build configuration list for PBXNativeTarget "CJ_MVVMTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +699,7 @@
 				F4E161791F4D25F500A70969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4E1617A1F4D25F500A70969 /* Build configuration list for PBXNativeTarget "CJ_MVVMUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +708,7 @@
 				F4E1617C1F4D25F500A70969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

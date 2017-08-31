@@ -1,0 +1,6 @@
+framework module Pods_CJ_MVVM {
+  umbrella header "Pods-CJ_MVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}
