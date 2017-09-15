@@ -24,16 +24,6 @@ typedef void(^Error)(id errorCode);
         NSLog(@"errorCode--------------%@",errorCode);
         self.errorBlock(errorCode);
     }];
-    
-//    [NetRequest requestPostWithURL:@"http://www.jianshu.com/users/recommended?seen_ids=&count=5&only_unfollowed=true" parameter:nil returnValueBlock:^(id returnValue) {
-//        
-//        self.returnBlock(returnValue);
-//        
-//    } errorCodeBlock:^(id errorCode) {
-//        
-//        self.errorBlock(errorCode);
-//        
-//    }];
 }
 
 - (void)pushMainDetailViewControllerWithSuperController:(UIViewController *)superVC model:(MainListModel *)model{

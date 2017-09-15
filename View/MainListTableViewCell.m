@@ -10,20 +10,20 @@
 
 @implementation MainListTableViewCell
 
-- (void)setListModel:(MainListModel *)listModel{
+- (void)setModel:(id)listModel{
     _listModel = listModel;
-    
-    _titleLabel.text = listModel.nickname;
-    _timeLabel.text = listModel.avatar_source;
+    _titleLabel.text = _listModel.nickname;
+    _timeLabel.text = _listModel.avatar_source;
 }
 
-+ (UITableViewCell *)cellForTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    MainListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainListTableViewCell"];
-    if (!cell) {
-        cell = [[MainListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"MainListTableViewCell"];
-    }
-    return cell;
-}
+//- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated{
+//    [super setHighlighted:highlighted animated:animated];
+//    if (highlighted) {
+//        self.titleLabel.text = [NSString stringWithFormat:@"Cell_Highlight"];
+//    }else{
+//        self.titleLabel.text = [NSString stringWithFormat:@"Cell_UnHighlight"];
+//    }
+//}
 
 - (void)awakeFromNib {
     [super awakeFromNib];

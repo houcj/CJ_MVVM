@@ -14,6 +14,8 @@
 		F40FD9801F53F9CE00BA1D8F /* MainListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD97F1F53F9CE00BA1D8F /* MainListModel.m */; };
 		F40FD9831F53F9E800BA1D8F /* MainBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD9821F53F9E800BA1D8F /* MainBaseModel.m */; };
 		F40FD9861F54CBFC00BA1D8F /* MainDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40FD9851F54CBFC00BA1D8F /* MainDetailViewController.m */; };
+		F430AC781F5EA27500E9B61A /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F430AC771F5EA27500E9B61A /* ArrayDataSource.m */; };
+		F430AC7B1F5EA28B00E9B61A /* ArrayDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F430AC7A1F5EA28B00E9B61A /* ArrayDelegate.m */; };
 		F48133E41F4D75CB00019A2B /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48133E31F4D75CB00019A2B /* AFNetworking.framework */; };
 		F4E1614C1F4D25F500A70969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E1614B1F4D25F500A70969 /* main.m */; };
 		F4E1614F1F4D25F500A70969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E1614E1F4D25F500A70969 /* AppDelegate.m */; };
@@ -61,6 +63,10 @@
 		F40FD9821F53F9E800BA1D8F /* MainBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBaseModel.m; sourceTree = "<group>"; };
 		F40FD9841F54CBFC00BA1D8F /* MainDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDetailViewController.h; sourceTree = "<group>"; };
 		F40FD9851F54CBFC00BA1D8F /* MainDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainDetailViewController.m; sourceTree = "<group>"; };
+		F430AC761F5EA27500E9B61A /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
+		F430AC771F5EA27500E9B61A /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
+		F430AC791F5EA28B00E9B61A /* ArrayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDelegate.h; sourceTree = "<group>"; };
+		F430AC7A1F5EA28B00E9B61A /* ArrayDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDelegate.m; sourceTree = "<group>"; };
 		F48133E31F4D75CB00019A2B /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking/AFNetworking.framework"; sourceTree = "<group>"; };
 		F4E161471F4D25F500A70969 /* CJ_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJ_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E1614B1F4D25F500A70969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -150,9 +156,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F430AC751F5EA26000E9B61A /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F430AC761F5EA27500E9B61A /* ArrayDataSource.h */,
+				F430AC771F5EA27500E9B61A /* ArrayDataSource.m */,
+				F430AC791F5EA28B00E9B61A /* ArrayDelegate.h */,
+				F430AC7A1F5EA28B00E9B61A /* ArrayDelegate.m */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
 		F4E1613E1F4D25F500A70969 = {
 			isa = PBXGroup;
 			children = (
+				F430AC751F5EA26000E9B61A /* Tab */,
 				F40FD97A1F53CB6800BA1D8F /* Request */,
 				F419080D1F4EB18500061464 /* Model */,
 				F4E1617E1F4D266400A70969 /* View */,
@@ -437,11 +455,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E161521F4D25F500A70969 /* ViewController.m in Sources */,
+				F430AC7B1F5EA28B00E9B61A /* ArrayDelegate.m in Sources */,
 				F40FD9801F53F9CE00BA1D8F /* MainListModel.m in Sources */,
 				F40FD97D1F53CBA400BA1D8F /* NetRequest.m in Sources */,
 				F4E1614F1F4D25F500A70969 /* AppDelegate.m in Sources */,
 				F40FD9791F53C69E00BA1D8F /* MainListViewModel.m in Sources */,
 				F4E1614C1F4D25F500A70969 /* main.m in Sources */,
+				F430AC781F5EA27500E9B61A /* ArrayDataSource.m in Sources */,
 				F4E161891F4D58B000A70969 /* MainListTableViewCell.m in Sources */,
 				F4E161821F4D26C700A70969 /* MainViewController.m in Sources */,
 				F40FD9761F53C48600BA1D8F /* PublicViewModel.m in Sources */,

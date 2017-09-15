@@ -9,15 +9,19 @@
 #import "MainViewController.h"
 #import "MainListTableViewCell.h"
 #import "MainListViewModel.h"
+#import "ArrayDataSource.h"
+#import "ArrayDelegate.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
-@interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface MainViewController ()
 
 @property (nonatomic, strong) UITableView *mainTableView;
 @property (nonatomic, strong) MainListViewModel *mainListViewModel;
 @property (nonatomic, strong) NSMutableArray *mainListArrs;
+@property (nonatomic) ArrayDataSource *arrayDataSource;
+@property (nonatomic) ArrayDelegate   *arrayDelegate;
 
 @end
 
@@ -30,10 +34,21 @@
 }
 
 - (void)getData{
+    
+    
+    void (^mainlistTableViewCell)(MainListTableViewCell *, MainListModel *) = ^(MainListTableViewCell *cell, MainListModel *model){
+        [cell setModel:model];
+    };
+    _arrayDataSource = [[ArrayDataSource alloc] initWithItems:_mainListArrs cellIdentifier:@"MainListTableViewCell" mainListTableViewCellBlock:mainlistTableViewCell];
+    self.mainTableView.dataSource = _arrayDataSource;
+    
+    
     typeof(self) __weak weakSelf = self;
     MainListViewModel *mainListVM = [[MainListViewModel alloc] init];
     [mainListVM setBlockWithReturnBlock:^(id returnValue) {
         [weakSelf.mainListArrs addObjectsFromArray:returnValue];
+        weakSelf.arrayDataSource.items = weakSelf.mainListArrs;
+        weakSelf.arrayDelegate.items = weakSelf.mainListArrs;
         [weakSelf.mainTableView reloadData];
     } errorBlock:^(id errorCode) {
         
@@ -45,29 +60,16 @@
 - (UITableView *)mainTableView{
     if (!_mainTableView) {
         _mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
-        _mainTableView.delegate = self;
-        _mainTableView.dataSource = self;
+        _arrayDataSource = [[ArrayDataSource alloc] init];
+        _arrayDelegate = [[ArrayDelegate alloc] init];
+        _mainTableView.delegate = _arrayDelegate;
+        _mainTableView.dataSource = _arrayDataSource;
         _mainTableView.estimatedRowHeight = 40;
         _mainTableView.rowHeight = UITableViewAutomaticDimension;
         _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_mainTableView registerNib:[UINib nibWithNibName:@"MainListTableViewCell" bundle:nil] forCellReuseIdentifier:@"MainListTableViewCell"];
     }
     return _mainTableView;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    MainListTableViewCell *cell = (MainListTableViewCell *)[MainListTableViewCell cellForTableView:tableView cellForRowAtIndexPath:indexPath];
-    cell.listModel = self.mainListArrs[indexPath.row];
-    return cell;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.mainListArrs.count;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    MainListViewModel *listVM = [[MainListViewModel alloc] init];
-    [listVM pushMainDetailViewControllerWithSuperController:self model:_mainListArrs[indexPath.row]];
 }
 
 - (NSMutableArray *)mainListArrs{

@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "MainListModel.h"
 
+@protocol CellConfigDelegate <NSObject>
+
+- (NSString *)titleLabel;
+- (NSString *)contentLabel;
+- (NSString *)timeLabel;
+
+@end
+
 @interface MainListTableViewCell : UITableViewCell
 
 @property (nonatomic) MainListModel *listModel;
@@ -16,6 +24,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
-+ (UITableViewCell *)cellForTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)setModel:(id<CellConfigDelegate>)listModel;
+
+@property (nonatomic) NSString *cellIdentifier;
+
 
 @end
